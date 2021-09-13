@@ -34,7 +34,7 @@ class secondViewController: UIViewController{
         
     }
     
-    fileprivate func delay(_ delay:Int, closure: @escaping () -> ()){ //функция запаздывания ВАЖНАЯ 
+    fileprivate func delay(_ delay:Int, closure: @escaping () -> ()){
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(delay)) {
             closure()
         }
@@ -56,7 +56,7 @@ class secondViewController: UIViewController{
         
         ac.addTextField { (userPasswordTF) in
             userPasswordTF.placeholder = "Введите пароль"
-            userPasswordTF.isSecureTextEntry = true //пароль невидимый
+            userPasswordTF.isSecureTextEntry = true //невидимый пароль
             
         }
         
