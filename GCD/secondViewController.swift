@@ -56,7 +56,7 @@ class secondViewController: UIViewController{
         
         ac.addTextField { (userPasswordTF) in
             userPasswordTF.placeholder = "Введите пароль"
-            userPasswordTF.isSecureTextEntry = true //невидимый пароль
+            userPasswordTF.isSecureTextEntry = true 
             
         }
         
@@ -71,7 +71,7 @@ class secondViewController: UIViewController{
         let queue = DispatchQueue.global(qos: .utility)
         queue.async {
             guard let url = self.imageURL, let imageData = try? Data(contentsOf: url) else {return}
-            DispatchQueue.main.async {//так как загрузка интерфейса только в главном потоке 
+            DispatchQueue.main.async {
                 self.image = UIImage (data: imageData)
             }
                     

@@ -17,8 +17,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPO-BQ-6Hf">
-                                <rect key="frame" x="109" y="460" width="196" height="30"/>
-                                <state key="normal" title="Go to second view controller"/>
+                                <rect key="frame" x="95.5" y="460" width="223" height="30"/>
+                                <state key="normal" title="Go to the second view controller"/>
                                 <connections>
                                     <segue destination="sm9-PB-VoT" kind="show" id="RE7-7D-ZCS"/>
                                 </connections>
